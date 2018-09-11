@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.breakdownStructurePlugin"
+		name="Breakdown Structure Diagram Plugin"
+		description="Sample plugin for generating Breakdown Structure Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.breakdownStructurePlugin.BreakdownStructurePlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.breakdownStructurePlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.breakdownStructurePlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.breakdownStructurePlugin.actionset1.BreakdownStructureActionControl"
+					actionType="generalAction"
+      		name="Breakdown Structure Diagram Plugin"
+		      description="Sample plugin for generating Breakdown Structure Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Breakdown Structure Diagram"
+					toolbarPath="com.vp.plugin.sample.breakdownStructurePlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.breakdownStructurePlugin.BreakdownStructureAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
